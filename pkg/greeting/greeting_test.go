@@ -16,3 +16,10 @@ func TestGreetingFor(t *testing.T) {
 		}
 	}
 }
+
+func TestHelloE2E(t *testing.T) {
+	const want = "e2e-cross-repo-spawn"
+	if got := HelloE2E(); got != want {
+		t.Errorf("HelloE2E() = %q, want %q", got, want)
+	}
+}
