@@ -15,3 +15,8 @@ func HelloE2E() string {
 func HelloIssue31() string {
 	return "e2e-cross-repo-spawn-31"
 }
+
+// HelloIssue52 returns the sentinel string for the cross-repo spawn regression test for alpha issue #52.
+func HelloIssue52() string {
+	return "e2e-cross-repo-spawn-52"
+}
