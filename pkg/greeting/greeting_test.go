@@ -65,3 +65,10 @@ func TestHelloIssue3620(t *testing.T) {
 		t.Errorf("HelloIssue3620() = %q; want %q", got, want)
 	}
 }
+
+func TestHelloIssue3737(t *testing.T) {
+	const want = "e2e-cross-repo-spawn-3737"
+	if got := HelloIssue3737(); got != want {
+		t.Errorf("HelloIssue3737() = %q; want %q", got, want)
+	}
+}
