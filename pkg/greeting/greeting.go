@@ -270,3 +270,8 @@ func HelloE2E202609302232049105() string {
 func HelloE2E202610010113589982() string {
 	return "e2e-cross-repo-spawn-20261001-011358-9982"
 }
+
+// HelloE2E202610130447429594 returns the sentinel string for the cross-repo spawn regression test.
+func HelloE2E202610130447429594() string {
+	return "e2e-cross-repo-spawn-20261013-044742-9594"
+}
