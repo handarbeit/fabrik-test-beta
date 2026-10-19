@@ -494,3 +494,10 @@ func TestHelloE2E202610192019235408(t *testing.T) {
 		t.Errorf("HelloE2E202610192019235408() = %q; want %q", got, want)
 	}
 }
+
+func TestHelloE2E202610192116141137(t *testing.T) {
+	const want = "e2e-cross-repo-spawn-20261019-211614-1137"
+	if got := HelloE2E202610192116141137(); got != want {
+		t.Errorf("HelloE2E202610192116141137() = %q; want %q", got, want)
+	}
+}
