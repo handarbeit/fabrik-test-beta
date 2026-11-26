@@ -71,7 +71,7 @@ A consumer of the `pkg/greeting` package (the alpha repo) can call `HelloE2E2026
 - **SC-001**: `go build ./...` and `go test ./...` both pass in this repo with the change applied.
 - **SC-002**: Calling `HelloE2E202611261503499288()` returns exactly `e2e-cross-repo-spawn-20261126-150349-9288`, verified by the new test.
 - **SC-003**: The exact text `HelloE2E202611261503499288` and `e2e-cross-repo-spawn-20261126-150349-9288` appears in this repo on `main` after the merge, so the scenario's final assertion can find it.
-- **SC-004**: The diff touches only the greeting source file and its test file, with no modifications to existing functions or tests.
+- **SC-004**: The Go changes touch only the greeting source file and its test file, with no modifications to existing functions or tests. The only other file added is this spec under `specs/` (persisted by the Specify stage).
 
 ## Assumptions
 
